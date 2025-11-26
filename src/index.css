@@ -1,0 +1,70 @@
+:root {
+  /* Colors from logo-liga.png */
+  --color-primary: #FF6B35;
+  /* Vibrant Orange */
+  --color-secondary: #0A192F;
+  /* Dark Navy Blue */
+  --color-accent: #FFB627;
+  /* Golden Yellow */
+  --color-text: #F0F6FC;
+  /* Light text */
+  --color-bg: #020c1b;
+  /* Dark background */
+  --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
+}
+
+.btn-primary:hover {
+  background-color: #ff5722;
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.8);
+  transform: translateY(-2px);
+}
