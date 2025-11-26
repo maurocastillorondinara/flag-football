@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     z-index: 1000;
     transition: all 0.3s ease;
     background: transparent;
@@ -11,9 +11,9 @@
 
 .header.scrolled {
     background: rgba(10, 25, 47, 0.95);
-    padding: 15px 0;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+    padding: 0.9375rem 0;
+    box-shadow: 0 0.125rem 1.25rem rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.625rem);
 }
 
 .header-container {
@@ -25,18 +25,18 @@
 .logo {
     font-size: 1.8rem;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     color: var(--color-text);
 }
 
 .logo-img {
-    height: 50px;
+    height: 5rem;
     width: auto;
     transition: all 0.3s ease;
 }
 
 .header.scrolled .logo-img {
-    height: 40px;
+    height: 4rem;
 }
 
 .logo .highlight {
@@ -45,7 +45,7 @@
 
 .nav {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
     align-items: center;
 }
 
@@ -59,8 +59,8 @@
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
-    bottom: -5px;
+    height: 0.125rem;
+    bottom: -0.3125rem;
     left: 0;
     background-color: var(--color-primary);
     transition: width 0.3s ease;
@@ -71,9 +71,9 @@
 }
 
 .nav-cta {
-    padding: 8px 20px;
-    border: 1px solid var(--color-primary);
-    border-radius: 4px;
+    padding: 0.5rem 1.25rem;
+    border: 0.0625rem solid var(--color-primary);
+    border-radius: 0.25rem;
     color: var(--color-primary);
 }
 
@@ -86,13 +86,13 @@
     display: none;
     background: none;
     flex-direction: column;
-    gap: 6px;
+    gap: 0.375rem;
     cursor: pointer;
 }
 
 .bar {
-    width: 25px;
-    height: 2px;
+    width: 1.5625rem;
+    height: 0.125rem;
     background-color: var(--color-text);
     transition: 0.3s;
 }
@@ -110,14 +110,18 @@
         width: 100%;
         background: var(--color-secondary);
         flex-direction: column;
-        padding: 20px;
-        gap: 20px;
-        transform: translateY(-150%);
-        transition: transform 0.3s ease;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1.25rem;
+        gap: 1.25rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+        border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
     }
 
     .nav.active {
         transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
     }
 }
