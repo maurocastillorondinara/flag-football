@@ -1,20 +1,21 @@
-# 🏈 Liga de Flag Football MDP
+# 🏈 FAMDQ — Fútbol Americano Mar del Plata
 
-Sitio web oficial de la **Liga de Football Flag de Mar del Plata**. Aplicación multi-page construida con Laravel 12, Blade templates y Vite.
+Sitio web oficial de **Fútbol Americano Mar del Plata (FAMDQ)**. Aplicación multi-page construida con Laravel 12, Blade templates y Vite.
 
 ---
 
 ## 📋 Descripción del Proyecto
 
-Este proyecto es el sitio web de la liga de flag football de Mar del Plata, Argentina. Actualmente funciona como un sitio informativo con páginas para mostrar información de la liga, los equipos participantes y medios de contacto. Está diseñado para escalar hacia una plataforma con base de datos para gestionar estadísticas, temporadas, fixtures y jugadores.
+Sitio web informativo de FAMDQ con páginas sobre modalidades, equipos, historia y contacto. Diseñado para escalar hacia una plataforma con base de datos para estadísticas, temporadas, fixtures y jugadores.
 
 ### Páginas Actuales
 
 | Ruta | Descripción |
 |------|-------------|
-| `/` | **Home** — Hero con CTA, resumen de la liga y galería de equipos |
-| `/la-liga` | **La Liga** — Información detallada sobre la liga y sus características |
-| `/equipos` | **Equipos** — Galería visual de todos los equipos con sus logos y colores |
+| `/` | **Home** — Hero con CTA de WhatsApp, modalidades y galería de equipos |
+| `/modalidades` | **Modalidades** — Football Equipado, Flag Masculino, Flag Femenino |
+| `/equipos` | **Equipos** — Galería visual de todos los equipos con logos y colores |
+| `/historia` | **Historia** — Origen de la liga, sponsors e instituciones, ubicación |
 
 ---
 
@@ -50,18 +51,19 @@ flag-football/
 │   │       └── PageController.php      # Controller de las páginas públicas
 │   └── Services/
 │       ├── TeamService.php             # Datos de equipos (futuro: Eloquent)
-│       └── LeagueService.php           # Datos de la liga
+│       └── LeagueService.php           # Datos de modalidades
 ├── resources/
 │   ├── views/
 │   │   ├── layouts/
 │   │   │   └── app.blade.php           # Layout principal (header + footer + Vite)
 │   │   ├── components/
 │   │   │   ├── header.blade.php        # Navegación con active state
-│   │   │   └── footer.blade.php        # Footer con links y redes sociales
+│   │   │   └── footer.blade.php        # Footer con links y redes sociales (SVG icons)
 │   │   └── pages/
 │   │       ├── home.blade.php          # Página de inicio
-│   │       ├── equipos.blade.php       # Página de equipos
-│   │       └── la-liga.blade.php       # Página sobre la liga
+│   │       ├── modalidades.blade.php   # Modalidades de juego
+│   │       ├── equipos.blade.php       # Galería de equipos
+│   │       └── historia.blade.php      # Historia de la liga
 │   ├── css/
 │   │   └── app.css                     # Todo el CSS (variables, componentes, responsive)
 │   └── js/
@@ -91,7 +93,7 @@ flag-football/
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/flag-football.git
+git clone https://github.com/maurocastillorondinara/flag-football.git
 cd flag-football
 
 # 2. Instalar dependencias PHP
@@ -189,7 +191,7 @@ public function reglamento(): View
 ```html
 <!-- resources/views/pages/reglamento.blade.php -->
 @extends('layouts.app')
-@section('title', 'Reglamento - Liga de Flag Football MDP')
+@section('title', 'Reglamento - FAMDQ')
 @section('content')
     <section class="features" style="padding-top: 10rem;">
         <div class="container">
@@ -214,4 +216,4 @@ public function reglamento(): View
 
 ## 📄 Licencia
 
-Este proyecto es privado y pertenece a la Liga de Football Flag de Mar del Plata.
+Este proyecto es privado y pertenece a Fútbol Americano Mar del Plata (FAMDQ).
