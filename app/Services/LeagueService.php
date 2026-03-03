@@ -6,14 +6,11 @@ namespace App\Services;
 
 /**
  * Service responsible for providing league feature/info data.
- *
- * Currently returns static data. In the future, this can
- * pull from a CMS or database to manage league content.
  */
 final readonly class LeagueService
 {
     /**
-     * Get the main feature highlights for the home page.
+     * Get the 3 modalidades for the home page.
      *
      * @return array<int, array{icon: string, title: string, description: string}>
      */
@@ -21,25 +18,25 @@ final readonly class LeagueService
     {
         return [
             [
-                'icon' => '⚡',
-                'title' => 'Sin Contacto',
+                'icon' => '🏈',
+                'title' => 'Football Equipado',
+                'description' => 'Modalidad 7vs7. Sumate a Atlantes, la Selección Marplatense de Football Equipado.',
+            ],
+            [
+                'icon' => '🏁',
+                'title' => 'Flag Masculino',
                 'description' => 'Toda la intensidad del football americano, sin los golpes. Velocidad pura y agilidad.',
             ],
             [
-                'icon' => '🧠',
-                'title' => 'Estrategia',
-                'description' => 'Cada jugada cuenta. Diseñá, ejecutá y superá a la defensa rival con inteligencia.',
-            ],
-            [
-                'icon' => '🌊',
-                'title' => 'Comunidad MDP',
-                'description' => 'Formá parte de la liga de mayor crecimiento en Mar del Plata. Hombres, mujeres y mixtos.',
+                'icon' => '⚡',
+                'title' => 'Flag Femenino',
+                'description' => 'El futuro es Flag. El deporte más en auge a nivel mundial, en tu ciudad.',
             ],
         ];
     }
 
     /**
-     * Get all feature details for the dedicated Liga page.
+     * Get all modalidades for the dedicated page.
      *
      * @return array<int, array{icon: string, title: string, description: string}>
      */
