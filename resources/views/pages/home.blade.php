@@ -5,7 +5,7 @@
 
 @section('content')
     {{-- Hero Section --}}
-    <section id="inicio" class="hero" style="background-image: url('{{ asset('images/equipado.jpeg') }}')">
+    <section id="inicio" class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h2 class="hero-subtitle">FÚTBOL AMERICANO MAR DEL PLATA</h2>

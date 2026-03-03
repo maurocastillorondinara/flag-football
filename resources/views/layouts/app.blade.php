@@ -8,7 +8,7 @@
     <title>@yield('title', 'FAMDQ - Fútbol Americano Mar del Plata')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
+<body style="background: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('{{ asset('images/equipado.jpeg') }}') no-repeat fixed center / cover;">
     @include('components.header')
 
     <main>
