@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Equipos - Liga de Flag Football MDP')
+@section('title', 'Equipos - FAMDQ')
 @section('meta_description', 'Conocé los equipos de la Liga de Football Flag de Mar del Plata: Nereidas, Liebres, Kraken, Acorazados, Atlantes y Tridentes.')
 
 @section('content')

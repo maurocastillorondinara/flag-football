@@ -29,6 +29,13 @@ final class PageController extends Controller
         ]);
     }
 
+    public function modalidades(): View
+    {
+        return view('pages.modalidades', [
+            'features' => $this->leagueService->getAllFeatures(),
+        ]);
+    }
+
     public function equipos(): View
     {
         return view('pages.equipos', [
@@ -36,10 +43,8 @@ final class PageController extends Controller
         ]);
     }
 
-    public function laLiga(): View
+    public function historia(): View
     {
-        return view('pages.la-liga', [
-            'features' => $this->leagueService->getAllFeatures(),
-        ]);
+        return view('pages.historia');
     }
 }
