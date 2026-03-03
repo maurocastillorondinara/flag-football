@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'La Liga - Liga de Flag Football MDP')
-@section('meta_description', 'Conocé la Liga de Football Flag de Mar del Plata. Sin contacto, estrategia pura y comunidad. Hombres, mujeres y mixtos.')
+@section('title', 'Modalidades - FAMDQ')
+@section('meta_description', 'Conocé las modalidades de Fútbol Americano en Mar del Plata: Football Equipado, Flag Masculino y Flag Femenino.')
 
 @section('content')
     <section class="features" style="padding-top: 10rem;">
         <div class="container">
-            <h2 class="section-title">La Liga</h2>
+            <h2 class="section-title">Modalidades</h2>
             <div class="features-grid">
                 @foreach ($features as $feature)
                     <div class="feature-card">
